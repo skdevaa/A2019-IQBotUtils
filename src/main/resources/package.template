@@ -1,0 +1,10 @@
+{
+  "name": "IQBotUtils",
+  "label": "IQBotUtils",
+  "description": "Provides actions for IQBot service operations.",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "commands": []
+}
