@@ -4,8 +4,8 @@
     "description": "Provides actions for IQBot service operations.",
     "group": "com.automationanywhere",
     "artifactName": "IQBotUtils",
-    "packageVersion": "1.0.0-20200126-094034",
-    "codeVersion": "1.0.0-20200126-094034",
+    "packageVersion": "1.0.0-20200207-184003",
+    "codeVersion": "1.0.0-20200207-184003",
     "commands": [
         {
             "name": "EndSession",
@@ -27,6 +27,35 @@
                             "name": "NOT_EMPTY"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "name": "FormatResult",
+            "label": "Format IQBot Result",
+            "description": "Format IQBot Result",
+            "nodeLabel": "Format IQBot Result",
+            "mainClass": "com.automationanywhere.botcommand.sk.FormatResultCommand",
+            "returnType": "DICTIONARY",
+            "returnSubtype": "ANY",
+            "returnLabel": "Dictionary with Header and Positions",
+            "returnRequired": true,
+            "returnDescription": "Note: Dictionary with key 'header' and key 'positions'. 'header' is a dictonary , 'positions' a table.",
+            "attributes": [
+                {
+                    "name": "iqtable",
+                    "label": "IQBot Result",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "lastindex",
+                    "label": "Header Last Column",
+                    "type": "NUMBER"
                 }
             ]
         },
